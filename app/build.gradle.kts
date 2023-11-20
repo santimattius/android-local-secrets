@@ -2,16 +2,17 @@
 plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
+    alias(libs.plugins.google.secrets.gradle.plugin)
 }
 
 android {
     namespace = "com.santimattius.android.secrets"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.santimattius.android.secrets"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,6 +40,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
