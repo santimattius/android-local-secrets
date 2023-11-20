@@ -3,8 +3,6 @@ Example using [google gradle plugin](https://github.com/google/secrets-gradle-pl
 
 ### Secrets Gradle Plugin for Android
 
-Tests Apache-2.0
-
 A Gradle plugin for providing your secrets securely to your Android project.
 
 This Gradle plugin reads secrets from a properties file not checked into version control, such as local.properties,
